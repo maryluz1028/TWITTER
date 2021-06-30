@@ -11,3 +11,9 @@ body{
 .content-header{
     height: 100%;
 }
+.content-publications{
+    width: 600px;
+}
+.content-trend{
+    width: 350px;
+}
