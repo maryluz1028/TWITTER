@@ -6,122 +6,681 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
     integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+     
     <link href="../Css/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../Css/homePageCss.css">
     <title>Twitter</title>
 </head>
 <body>
-    <div class="flex">
-        <div class="content-header flex-1 flex justify-end ">
-            <header class="header flex flex-col pr-4 pl-4n h-screen justify-between">
-                <div>
-                    <div class="p-3 flex justify-start mb-4">
-                        <div class="">
-                            <img class="w-7 " src="../Images/twitter-logo.png">
-                        </div>  
-                    </div>
-                    <nav>
-                        <ul class="text-xl font-bold">
-    
-                            <li class="menu-item mb-5">
-                                <a href="#" class="p-3  hover:bg-blue-100 rounded-full hover:text-blue-500 ">
-                                    <i class="fas fa-home pr-4 text-2xl"></i>Home</a>
-                            </li>
-                            <li class="menu-item  mb-5 ">                   
-                                <a href="#" class="menu-link p-3 hover:bg-blue-100 rounded-full hover:text-blue-500"> <i class="fas fa-hashtag pr-4 text-2xl"></i>Explore</a>
-                            </li>
-                            <li class="menu-item  mb-5">
-                        
-                                <a href="#" class="menu-link p-3 hover:bg-blue-100 rounded-full hover:text-blue-500"> <i class="far fa-bell pr-4 text-2xl"></i>Notifications</a>
-                            </li>
-                            <li class="menu-item  mb-5">
-                        
-                                <a href="#" class="menu-link p-3 hover:bg-blue-100 rounded-full hover:text-blue-500"><i class="far fa-envelope pr-4 text-2xl"></i>Messages</a>
-                            </li>
-                            <li class="menu-item  mb-5">
-                        
-                                <a href="#" class="menu-link p-3 hover:bg-blue-100 rounded-full hover:text-blue-500"> <i class="far fa-bookmark pr-4 text-2xl"></i>Bookmarks</a>
-                            </li>
-                            <li class="menu-item  mb-5">
-                        
-                                <a href="#" class="menu-link p-3 hover:bg-blue-100 rounded-full hover:text-blue-500"><i class="far fa-list-alt pr-4 text-2xl"></i>Lists</a>
-                            </li>
-                            <li class="menu-item  mb-5">
-                        
-                                <a href="#" class="menu-link p-3 hover:bg-blue-100 rounded-full hover:text-blue-500"><i class="far fa-user pr-4 text-2xl"></i>Profile</a>
-                            </li>
-                            <li class="menu-item  mb-5">
-                                <a href="#" class="menu-link p-3 hover:bg-blue-100 rounded-full hover:text-blue-500"><i class="far fa-dot-circle pr-4 text-2xl"></i>More</a>
-                            </li>
-                        </ul>
-                    </nav>
+    <div class="flex bg-gray-100">
+        <div class="content-header bg-white fixed left-0 ">
+            <div class="flex justify-end">
+                <header class="header flex flex-col pr-4 pl-4n  justify-between">
                     <div>
-                        <button class="bg-blue-500 rounded-full w-full p-3 text-white font-bold hover:bg-blue-600 ">tweet</button>
-                    </div>
-                </div>
-                <div class="flex p-3 mt-2 mb-2 justify-between items-center hover:bg-blue-100 rounded-full">
-                    <div class="flex items-center justify-center">
+                        <div class="p-3 flex justify-start mb-4">
+                            <div class="">
+                                <img class="w-7 " src="../Images/twitter-logo.png">
+                            </div>  
+                        </div>
+                        <nav>
+                            <ul class="text-xl font-bold">
+        
+                                <li class="menu-item mb-5">
+                                    <a href="#" class="p-3  hover:bg-blue-100 rounded-full hover:text-blue-500 ">
+                                        <i class="fas fa-home pr-4 text-2xl"></i>Home</a>
+                                </li>
+                                <li class="menu-item  mb-5 ">                   
+                                    <a href="#" class="menu-link p-3 hover:bg-blue-100 rounded-full hover:text-blue-500"> <i class="fas fa-hashtag pr-4 text-2xl"></i>Explore</a>
+                                </li>
+                                <li class="menu-item  mb-5">
+                            
+                                    <a href="#" class="menu-link p-3 hover:bg-blue-100 rounded-full hover:text-blue-500"> <i class="far fa-bell pr-4 text-2xl"></i>Notifications</a>
+                                </li>
+                                <li class="menu-item  mb-5">
+                            
+                                    <a href="#" class="menu-link p-3 hover:bg-blue-100 rounded-full hover:text-blue-500"><i class="far fa-envelope pr-4 text-2xl"></i>Messages</a>
+                                </li>
+                                <li class="menu-item  mb-5">
+                            
+                                    <a href="#" class="menu-link p-3 hover:bg-blue-100 rounded-full hover:text-blue-500"> <i class="far fa-bookmark pr-4 text-2xl"></i>Bookmarks</a>
+                                </li>
+                                <li class="menu-item  mb-5">
+                            
+                                    <a href="#" class="menu-link p-3 hover:bg-blue-100 rounded-full hover:text-blue-500"><i class="far fa-list-alt pr-4 text-2xl"></i>Lists</a>
+                                </li>
+                                <li class="menu-item  mb-5">
+                            
+                                    <a href="#" class="menu-link p-3 hover:bg-blue-100 rounded-full hover:text-blue-500"><i class="far fa-user pr-4 text-2xl"></i>Profile</a>
+                                </li>
+                                <li class="menu-item  mb-5">
+                                    <a href="#" class="menu-link p-3 hover:bg-blue-100 rounded-full hover:text-blue-500"><i class="far fa-dot-circle pr-4 text-2xl"></i>More</a>
+                                </li>
+                            </ul>
+                        </nav>
                         <div>
-                            <img src="../Images/pp.jpg" class="w-10 rounded-full">
+                            <button class="bg-blue-500 rounded-full w-full p-3 text-white font-bold hover:bg-blue-600 ">tweet</button>
                         </div>
                     </div>
-                    <div class="flex flex-col text-base" >
-                        <div class="w-full font-bold"><span>Mary Luz Pariona</span></div>
-                        <div class="w-full text-gray-500"><span>@pariona_mary</span></div>
+                    <div class="flex p-3 mt-2 mb-2 justify-between items-center hover:bg-blue-100 rounded-full">
+                        <div class="flex items-center justify-center">
+                            <div>
+                                <img src="../Images/pp.jpg" class="w-10 rounded-full">
+                            </div>
+                        </div>
+                        <div class="flex flex-col text-base" >
+                            <div class="w-full font-bold"><span>Mary Luz Pariona</span></div>
+                            <div class="w-full text-gray-500"><span>@pariona_mary</span></div>
+                        </div>
+                        <div class="flex items-center justify-center">
+                            <span><i class="fas fa-ellipsis-h"></i></span>
+                        </div>
+                        
                     </div>
-                    <div class="flex items-center justify-center">
-                        <span><i class="fas fa-ellipsis-h"></i></span>
-                    </div>
-                    
-                </div>
-            </header>
+                </header>
         </div>
-        <main class="main">
-            <div class=" h-screen flex justify-between ">
-                <div class="content-publications border-r border-gray-200 border-l border-gray-200 ">
-                    <div class="p-2.5 flex justify-between items-center border-b border-gray-200">
-                        <span class="font-extrabold text-xl">Home</span>
-                        <div class="flex justify-center items-center w-8 h-8 hover:bg-blue-100 rounded-full ">
-                            <i class="far fa-star text-xl"></i>
-                        </div>
-                    </div>
-                    <div class="flex pr-4 pl-4 p-1 border-b">
-                        <div class="pt-2.5 mr-4">
-                            <div class="flex justify-center items-center">
-                                <img class="w-14 rounded-full" src="../Images/pp.jpg">
+        </div>
+ 
+        <main class="main bg-white">
+            <div class="content-main">
+                <div class=" h-screen flex justify-between ">
+                    <div class="content-publications border-r border-gray-200 border-l border-gray-200">
+                        <div
+                            class="home pr-4 pl-4 flex justify-between items-center bg-white w-full sticky top-0 border-b border-gray-200">
+                            <span class="font-extrabold text-xl">Home</span>
+                            <div
+                                class="flex justify-center items-center text-blue-500 w-10 h-10 text-xl hover:bg-blue-100 rounded-full  ">
+                                <i class="far fa-star"></i>
                             </div>
                         </div>
-                        <div class="flex flex-col w-full">
-                            <div class=" pt-4 pb-4">
-                                <span class="text-xl text-gray-500">What's happening?</span>
-                            </div>
-                            <div class=" flex pb-2 pt-2 items-center justify-between">
-                                <div class="flex items-center text-blue-500">
-                                    <div class="pr-2.5 pl-2.5 text-xl">
-                                        <i class="fas fa-image"></i> 
-                                    </div>
-                                    <div class="pr-2.5 pl-2.5 text-xl">
-                                        <i class="fas fa-image"></i> 
-                                    </div>
-                                    <div class="pr-2.5 pl-2.5 text-xl">
-                                        <i class="fas fa-image"></i> 
-                                    </div>
-                                    <div class="pr-2.5 pl-2.5 text-xl">
-                                        <i class="fas fa-image"></i> 
-                                    </div>
-                                    <div class="pr-2.5 pl-2.5 text-xl">
-                                        <i class="fas fa-image"></i> 
-                                    </div>
-                                </div>
-                                <div>
-                                    <button class="bg-blue-300 pt-2 pb-2 pr-3 pl-3 rounded-full text-base text-center text-white font-bold">Tweet</button>
+                        <div class="flex pr-4 pl-4 p-1 border-b  border-gray-200 mb-3 bg-white">
+                            <div class="pt-2.5 mr-4">
+                                <div class="">
+                                    <img class="w-12 h-12 rounded-full object-cover" src="../Images/pp.jpg">
                                 </div>
                             </div>
+                            <div class="flex flex-col flex-1">
+                                <div class=" pt-4 pb-4">
+                                    <span class="text-xl text-gray-500">What's happening?</span>
+                                </div>
+                                <div class="flex pb-2 pt-2 items-center justify-between">
+                                    <div class="flex items-center text-blue-500">
+                                        <div
+                                            class="pr-2.5 pl-2.5 flex justify-center items-center text-xl w-10 h-10 hover:bg-blue-100 rounded-full ">
+                                            <i class="fas fa-image"></i>
+                                        </div>
+                                        <div
+                                            class="pr-2.5 pl-2.5 flex justify-center items-center text-xl w-10 h-10 hover:bg-blue-100 rounded-full">
+                                            <i class="fas fa-image"></i>
+                                        </div>
+                                        <div
+                                            class="pr-2.5 pl-2.5 flex justify-center items-center text-xl w-10 h-10 hover:bg-blue-100 rounded-full">
+                                            <i class="fas fa-poll-h"></i>
+                                        </div>
+                                        <div
+                                            class="pr-2.5 pl-2.5 flex justify-center items-center text-xl w-10 h-10 hover:bg-blue-100 rounded-full">
+                                            <i class="far fa-smile"></i>
+                                        </div>
+                                        <div
+                                            class="pr-2.5 pl-2.5 flex justify-center items-center text-xl w-10 h-10 hover:bg-blue-100 rounded-full">
+                                            <i class="far fa-calendar-check"></i>
+                                        </div>
+                                    </div>
+                                    <button
+                                        class="bg-blue-300 pt-2 pb-2 pr-3 pl-3 rounded-full text-base text-center text-white font-bold">Tweet</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white">
+                            <article class="border-t border-b pt-3 pb-1 pr-4 pl-4 hover:bg-gray-50">
+                                <div class="flex">
+                                    <div class="mr-4">
+                                        <div class=" flex items-center justify-center">
+                                            <img class="w-12 h-12 rounded-full object-cover" src="../Images/pp.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col flex-1">
+                                        <div class="flex justify-between items-center">
+                                            <div class="flex items-center">
+                                                <div class="pr-0.5 text-base font-bold">
+                                                    <span>businnes name</span>
+                                                </div>
+                                                <div class="pr-0.5 text-base  text-gray-500">
+                                                    <span>@name_acount</span>
+                                                </div>
+                                                <div class="pr-0.5 text-base  text-gray-500">
+                                                    <span>.</span>
+                                                </div>
+                                                <div class="pr-0.5 text-gray-500">
+                                                    <span>5m</span>
+                                                </div>
+                                            </div>
+                                            <div class="p-0.5 text-gray-500 ">
+                                                <span><i class="fas fa-ellipsis-h"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col">
+                                            <div>
+                                                <p class="mb-3">Lorem iima id architecto! Dolore corporis ad accusamus
+                                                    consequatur laboriosam enim voluptates quisquam cumque
+                                                    et. A.</p>
+                                            </div>
+                                            <div class="border border-gray-200 rounded-2xl mt-3 mb-1 hover:bg-gray-100">
+                                                <div class="w-full">
+                                                    <img src="../Images/comercio.jpg" class="rounded-t-2xl rounded-t-2xr">
+                                                </div>
+                                                <div class="p-3 flex flex-col">
+                                                    <div>
+                                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing sit amet
+                                                            consectetur adipisicing</p>
+                                                    </div>
+                                                    <div>
+                                                        <p class="text-gray-500">Lorem ipsum dolor, sit amet consectetur
+                                                            adipisicing elit. Similique iste sit magni qui,
+                                                            temporibus
+                                                            voluptatem, necessitatibus kkkkmm</p>
+                                                    </div>
+                                                    <div class="text-gray-500">
+                                                        <span><i class="fas fa-link"></i></span>
+                                                        <span>el comercio.pe</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="flex justify-between">
+                                                <div class="w-full">
+                                                    <div class=" flex items-center reactions hover:text-blue-500">
+                                                        <div class="reply w-10 h-10 flex justify-center items-center mr-1">
+                                                            <i class="far fa-comment"></i>
+                                                        </div>
+                                                        <div class="text-xs">
+                                                            <span>124</span>
+                                                        </div>
+                                                    </div>
+        
+                                                </div>
+                                                <div class="w-full">
+                                                    <div class="flex items-center reactions hover:text-green-500">
+                                                        <div class="retweet w-10 h-10 flex justify-center items-center mr-1">
+                                                            <i class="fas fa-retweet"></i>
+                                                        </div>
+                                                        <div class="text-xs">
+                                                            <span>254</span>
+                                                        </div>
+                                                    </div>
+        
+                                                </div>
+                                                <div class="w-full">
+                                                    <div class="flex items-center reactions hover:text-red-500 ">
+                                                        <div class=" like w-10 h-10  flex justify-center items-center mr-1">
+                                                            <i class="far fa-heart"></i>
+                                                        </div>
+                                                        <div class="text-xs">
+                                                            <span>852</span>
+                                                        </div>
+                                                    </div>
+        
+                                                </div>
+                                                <div class="w-full">
+                                                    <div class="flex items-center reactions hover:text-blue-500">
+                                                        <div class=" share w-10 h-10 flex justify-center items-center mr-1">
+                                                            <i class="fas fa-external-link-alt"></i>
+                                                        </div>
+                                                        <div class="text-xs">
+                                                            <span>f</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="border-t border-b pt-3 pb-1 pr-4 pl-4 hover:bg-gray-50">
+                                <div class="flex">
+                                    <div class="mr-4">
+                                        <div class=" flex items-center justify-center">
+                                            <img class="w-12 h-12 rounded-full object-cover" src="../Images/pp.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col flex-1">
+                                        <div class="flex justify-between items-center">
+                                            <div class="flex items-center">
+                                                <div class="pr-0.5 text-base font-bold">
+                                                    <span>businnes name</span>
+                                                </div>
+                                                <div class="pr-0.5 text-base  text-gray-500">
+                                                    <span>@name_acount</span>
+                                                </div>
+                                                <div class="pr-0.5 text-base  text-gray-500">
+                                                    <span>.</span>
+                                                </div>
+                                                <div class="pr-0.5 text-gray-500">
+                                                    <span>5m</span>
+                                                </div>
+                                            </div>
+                                            <div class="p-0.5 text-gray-500 ">
+                                                <span><i class="fas fa-ellipsis-h"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col">
+                                            <div>
+                                                <p>Lorem iima id architecto! Dolore corporis ad accusamus consequatur laboriosam
+                                                    enim voluptates quisquam cumque
+                                                    et. A.</p>
+                                            </div>
+                                            <div class="border border-gray-200 rounded-2xl mt-3 mb-1 hover:bg-gray-100">
+                                                <div class="w-full">
+                                                    <img src="../Images/comercio.jpg" class="rounded-t-2xl rounded-t-2xr">
+                                                </div>
+                                                <div class="p-3 flex flex-col">
+                                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                                                    <p class="text-gray-500">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                                        elit. Similique iste sit magni qui, temporibus
+                                                        voluptatem, necessitatibus kkkkmm</p>
+                                                    <div class="text-gray-500">
+                                                        <span><i class="fas fa-link"></i></span>
+                                                        <span>el comercio.pe</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="flex justify-between">
+                                                <div class="w-full">
+                                                    <div class=" flex items-center reactions hover:text-blue-500">
+                                                        <div class="reply w-10 h-10 flex justify-center items-center mr-1">
+                                                            <i class="far fa-comment"></i>
+                                                        </div>
+                                                        <div class="text-xs">
+                                                            <span>124</span>
+                                                        </div>
+                                                    </div>
+        
+                                                </div>
+                                                <div class="w-full">
+                                                    <div class="flex items-center reactions hover:text-green-500">
+                                                        <div class="retweet w-10 h-10 flex justify-center items-center mr-1">
+                                                            <i class="fas fa-retweet"></i>
+                                                        </div>
+                                                        <div class="text-xs">
+                                                            <span>254</span>
+                                                        </div>
+                                                    </div>
+        
+                                                </div>
+                                                <div class="w-full">
+                                                    <div class="flex items-center reactions hover:text-red-500 ">
+                                                        <div class=" like w-10 h-10  flex justify-center items-center mr-1">
+                                                            <i class="far fa-heart"></i>
+                                                        </div>
+                                                        <div class="text-xs">
+                                                            <span>852</span>
+                                                        </div>
+                                                    </div>
+        
+                                                </div>
+                                                <div class="w-full">
+                                                    <div class="flex items-center reactions hover:text-blue-500">
+                                                        <div class=" share w-10 h-10 flex justify-center items-center mr-1">
+                                                            <i class="fas fa-external-link-alt"></i>
+                                                        </div>
+                                                        <div class="text-xs">
+                                                            <span>f</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="border-t border-b pt-3 pb-1 pr-4 pl-4 hover:bg-gray-50">
+                                <div class="flex">
+                                    <div class="mr-4">
+                                        <div class=" flex items-center justify-center">
+                                            <img class="w-12 h-12 rounded-full object-cover" src="../Images/pp.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col flex-1">
+                                        <div class="flex justify-between items-center">
+                                            <div class="flex items-center">
+                                                <div class="pr-0.5 text-base font-bold">
+                                                    <span>businnes name</span>
+                                                </div>
+                                                <div class="pr-0.5 text-base  text-gray-500">
+                                                    <span>@name_acount</span>
+                                                </div>
+                                                <div class="pr-0.5 text-base  text-gray-500">
+                                                    <span>.</span>
+                                                </div>
+                                                <div class="pr-0.5 text-gray-500">
+                                                    <span>5m</span>
+                                                </div>
+                                            </div>
+                                            <div class="p-0.5 text-gray-500 ">
+                                                <span><i class="fas fa-ellipsis-h"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col">
+                                            <div>
+                                                <p>Lorem iima id architecto! Dolore corporis ad accusamus consequatur laboriosam
+                                                    enim voluptates quisquam cumque
+                                                    et. A.</p>
+                                            </div>
+                                            <div class="border border-gray-200 rounded-2xl mt-3 mb-1 hover:bg-gray-100">
+                                                <div class="w-full">
+                                                    <img src="../Images/comercio.jpg" class="rounded-t-2xl rounded-t-2xr">
+                                                </div>
+                                                <div class="p-3 flex flex-col">
+                                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                                                    <p class="text-gray-500">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                                        elit. Similique iste sit magni qui, temporibus
+                                                        voluptatem, necessitatibus kkkkmm</p>
+                                                    <div class="text-gray-500">
+                                                        <span><i class="fas fa-link"></i></span>
+                                                        <span>el comercio.pe</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="flex justify-between">
+                                                <div class="w-full">
+                                                    <div class=" flex items-center reactions hover:text-blue-500">
+                                                        <div class="reply w-10 h-10 flex justify-center items-center mr-1">
+                                                            <i class="far fa-comment"></i>
+                                                        </div>
+                                                        <div class="text-xs">
+                                                            <span>124</span>
+                                                        </div>
+                                                    </div>
+        
+                                                </div>
+                                                <div class="w-full">
+                                                    <div class="flex items-center reactions hover:text-green-500">
+                                                        <div class="retweet w-10 h-10 flex justify-center items-center mr-1">
+                                                            <i class="fas fa-retweet"></i>
+                                                        </div>
+                                                        <div class="text-xs">
+                                                            <span>254</span>
+                                                        </div>
+                                                    </div>
+        
+                                                </div>
+                                                <div class="w-full">
+                                                    <div class="flex items-center reactions hover:text-red-500 ">
+                                                        <div class=" like w-10 h-10  flex justify-center items-center mr-1">
+                                                            <i class="far fa-heart"></i>
+                                                        </div>
+                                                        <div class="text-xs">
+                                                            <span>852</span>
+                                                        </div>
+                                                    </div>
+        
+                                                </div>
+                                                <div class="w-full">
+                                                    <div class="flex items-center reactions hover:text-blue-500">
+                                                        <div class=" share w-10 h-10 flex justify-center items-center mr-1">
+                                                            <i class="fas fa-external-link-alt"></i>
+                                                        </div>
+                                                        <div class="text-xs">
+                                                            <span>f</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
                         </div>
                     </div>
-                </div>
-                <div class="content-trend">
-                    dfg
+                    <div class="content-search-trend bg-white mr-3">
+                        <div class="search w-full pt-1 pb-1 sticky top-0 bg-white mb-3 z-50 ">
+                                <div class="w-full rounded-full flex p-2.5 bg-gray-100 ">
+                                    <div class="ml-4">
+                                        <i class="fas fa-search text-gray-500"></i>
+                                    </div>
+                                    <div class="ml-4 flex-1">
+                                        <input class="w-full bg-gray-100 placeholder-gray-500" placeholder="Search Twitter">
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="content-trends mb-4">
+                            <div class="trends rounded-2xl flex flex-col bg-gray-100">
+                                <div class="header-trends">
+                                    <div class="flex flex-row justify-between pt-2 pb-2 pr-4 pl-4 items-center border-b border-gray-200 ">
+                                        <div class="text-xl font-extrabold" >
+                                            <span>Trends for you</span>
+                                        </div>
+                                        <div class="flex text-xl text-blue-500 w-10 h-10 justify-center items-center hover:bg-blue-100 rounded-full cursor-pointer  ">
+                                            <i class="fas fa-cog"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="trends-for-you">
+                                    <div class="pt-2 pb-2 pl-3.5 pr-3.5 border-b border-gray-200 hover:bg-gray-200 cursor-pointer ">
+                                        <div class="flex flex-col w-full justify-center text-sm text-gray-500">
+                                            <div class="flex flex-row justify-between items-center relative">
+                                                <span class="">Trending in peru</span>
+                                                <div class="flex w-8 h-8 justify-center items-center absolute right-0 top-0 hover:bg-blue-200 rounded-full hover:text-blue-500">
+                                                    <i class="fas fa-ellipsis-h"></i>
+                                                </div>
+                                            </div>
+                                            <span class="text-base font-bold text-black">Keiko</span>
+                                            <span>33.14 Tweets</spa>
+                                        </div>
+                                    </div>
+                                    <div class="pt-2 pb-2 pl-3.5 pr-3.5 border-b border-gray-200 hover:bg-gray-200 cursor-pointer ">
+                                        <div class="flex flex-col w-full justify-center text-sm text-gray-500">
+                                            <div class="flex flex-row justify-between items-center relative">
+                                                <span class="">Trending in peru</span>
+                                                <div class="flex w-8 h-8 justify-center items-center absolute right-0 top-0 hover:bg-blue-200 rounded-full hover:text-blue-500">
+                                                    <i class="fas fa-ellipsis-h"></i>
+                                                </div>
+                                            </div>
+                                            <span class="text-base font-bold text-black">Keiko</span>
+                                            <span>33.14 Tweets</spa>
+                                        </div>
+                                    </div>
+                                    <div class="pt-2 pb-2 pl-3.5 pr-3.5 border-b border-gray-200 hover:bg-gray-200 cursor-pointer ">
+                                        <div class="flex flex-col w-full justify-center text-sm text-gray-500">
+                                            <div class="flex flex-row justify-between items-center relative">
+                                                <span class="">Trending in peru</span>
+                                                <div class="flex w-8 h-8 justify-center items-center absolute right-0 top-0 hover:bg-blue-200 rounded-full hover:text-blue-500">
+                                                    <i class="fas fa-ellipsis-h"></i>
+                                                </div>
+                                            </div>
+                                            <span class="text-base font-bold text-black">Keiko</span>
+                                            <span>33.14 Tweets</spa>
+                                        </div>
+                                    </div>
+                                    <div class="pt-2 pb-2 pl-3.5 pr-3.5 border-b border-gray-200 hover:bg-gray-200 cursor-pointer ">
+                                        <div class="flex flex-col w-full justify-center text-sm text-gray-500">
+                                            <div class="flex flex-row justify-between items-center relative">
+                                                <span class="">Trending in peru</span>
+                                                <div class="flex w-8 h-8 justify-center items-center absolute right-0 top-0 hover:bg-blue-200 rounded-full hover:text-blue-500">
+                                                    <i class="fas fa-ellipsis-h"></i>
+                                                </div>
+                                            </div>
+                                            <span class="text-base font-bold text-black">Keiko</span>
+                                            <span>33.14 Tweets</spa>
+                                        </div>
+                                    </div>
+                                    <div class="pt-2 pb-2 pl-3.5 pr-3.5 border-b border-gray-200 hover:bg-gray-200 cursor-pointer ">
+                                        <div class="flex flex-col w-full justify-center text-sm text-gray-500">
+                                            <div class="flex flex-row justify-between items-center relative">
+                                                <span class="">Trending in peru</span>
+                                                <div class="flex w-8 h-8 justify-center items-center absolute right-0 top-0 hover:bg-blue-200 rounded-full hover:text-blue-500">
+                                                    <i class="fas fa-ellipsis-h"></i>
+                                                </div>
+                                            </div>
+                                            <span class="text-base font-bold text-black">Keiko</span>
+                                            <span>33.14 Tweets</spa>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer-trends ">
+                                    <div class="pt-2 pb-2 pl-3.5 pr-3.5 w-full hover:bg-gray-200 rounded-b-2xl ">
+                                        <div class="text-base text-blue-500">
+                                                <a class="block" href="#">Show more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-follow mb-4">
+                            <div class="follow w-full rounded-2xl bg-gray-100 flex flex-col ">                               
+                                <div class="header-follow">
+                                    <div class="pb-2 pt-2 pr-3.5 pl-3.5 border-b border-gray-200">
+                                        <div class="text-xl font-extrabold">
+                                            <spas>Who to hollow</spas>
+                                        </div>                                   
+                                    </div>
+                                </div>
+                                <div class="how-to-hollow">
+                                    <div class="pb-2 pt-2 pr-3.5 pl-3.5 border-b border-gray-200 hover:bg-gray-200 cursor-pointer">
+                                        <div class="flex flex-row">
+                                            <div class="flex flex-row items-center">
+                                                <div class="pr-3">
+                                                    <div class="flex justify-center items-center">
+                                                        <img src="../Images/pp.jpg" class="w-12 h-12 rounded-full object-cover">
+                                                    </div>
+                                                </div>                           
+                                            </div>                
+                                            <div class="flex flex-row justify-between items-center flex-1">
+                                                <div class="flex flex-col">
+                                                    <span class="w-full whitespace-nowrap overflow-ellipsis overflow-hidden">nombre apellido</span>
+                                                    <div class="w-full"><span>nombrecuenta</span></div>
+                                                </div>
+                                                <div>
+                                                    <button class="pt-1 pb-1 pr-4 pl-4 rounded-full border border-blue-500 text-blue-500 hover:bg-blue-100">follow</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pb-2 pt-2 pr-3.5 pl-3.5 border-b border-gray-200 hover:bg-gray-200 cursor-pointer">
+                                        <div class="flex flex-row">
+                                            <div class="flex flex-row items-center">
+                                                <div class="pr-3">
+                                                    <div class="flex justify-center items-center">
+                                                        <img src="../Images/pp.jpg" class="w-12 h-12 rounded-full object-cover">
+                                                    </div>
+                                                </div>                           
+                                            </div>                
+                                            <div class="flex flex-row justify-between items-center flex-1">
+                                                <div class="flex flex-col">
+                                                    <span class="w-full whitespace-nowrap overflow-ellipsis overflow-hidden">nombre apellido</span>
+                                                    <div class="w-full"><span>nombrecuenta</span></div>
+                                                </div>
+                                                <div>
+                                                    <button class="pt-1 pb-1 pr-4 pl-4 rounded-full border border-blue-500 text-blue-500 hover:bg-blue-100">follow</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pb-2 pt-2 pr-3.5 pl-3.5 border-b border-gray-200 hover:bg-gray-200 cursor-pointer">
+                                        <div class="flex flex-row">
+                                            <div class="flex flex-row items-center">
+                                                <div class="pr-3">
+                                                    <div class="flex justify-center items-center">
+                                                        <img src="../Images/pp.jpg" class="w-12 h-12 rounded-full object-cover">
+                                                    </div>
+                                                </div>                           
+                                            </div>                
+                                            <div class="flex flex-row justify-between items-center flex-1">
+                                                <div class="flex flex-col">
+                                                    <span class="w-full whitespace-nowrap overflow-ellipsis overflow-hidden">nombre apellido</span>
+                                                    <div class="w-full"><span>nombrecuenta</span></div>
+                                                </div>
+                                                <div>
+                                                    <button class="pt-1 pb-1 pr-4 pl-4 rounded-full border border-blue-500 text-blue-500 hover:bg-blue-100">follow</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pb-2 pt-2 pr-3.5 pl-3.5 border-b border-gray-200 hover:bg-gray-200 cursor-pointer">
+                                        <div class="flex flex-row">
+                                            <div class="flex flex-row items-center">
+                                                <div class="pr-3">
+                                                    <div class="flex justify-center items-center">
+                                                        <img src="../Images/pp.jpg" class="w-12 h-12 rounded-full object-cover">
+                                                    </div>
+                                                </div>                           
+                                            </div>                
+                                            <div class="flex flex-row justify-between items-center flex-1">
+                                                <div class="flex flex-col">
+                                                    <span class="w-full whitespace-nowrap overflow-ellipsis overflow-hidden">nombre apellido</span>
+                                                    <div class="w-full"><span>nombrecuenta</span></div>
+                                                </div>
+                                                <div>
+                                                    <button class="pt-1 pb-1 pr-4 pl-4 rounded-full border border-blue-500 text-blue-500 hover:bg-blue-100">follow</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer-follow">
+                                    <div class="pb-2 pt-2 pr-3.5 pl-3.5 hover:bg-gray-200 rounded-b-2xl ">
+                                        <div class="text-base text-blue-500">
+                                            <a class="block" href="#">Show more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-topics">
+                            <div class="flex flex-col rounded-2xl bg-gray-100">
+                                <div class="header-topics">
+                                    <div class="pr-3.5 pl-3.5 pt-2 pb-2 border-b border-gray-200 ">
+                                        <div class="text-xl font-extrabold">
+                                            <span>Topics to follow</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="topics-to-follow">
+                                    <div class="flex flex-row justify-between items-center pr-3.5 pl-3.5 pt-2 pb-2 border-b border-gray-200 text-base hover:bg-gray-200 cursor-pointer ">
+                                        <div class="flex flex-col justify-center">
+                                            <div class="font-bold"><span>Actors</span></div>
+                                            <div><span>Celebrities</span></div>
+                                        </div>
+                                        <div class="flex flex-row items-center">
+                                            <div class="pr-1">
+                                                <button class="rounded-2xl border border-blue-500 pt-1 pb-1 pr-4 pl-4 hover:bg-blue-100">Follow</button>
+                                            </div>
+                                            <div class="flex items-center justify-center w-8 h-8 hover:bg-blue-100 rounded-full"><i class="fas fa-times"></i></div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-between items-center pr-3.5 pl-3.5 pt-2 pb-2 border-b border-gray-200 text-base hover:bg-gray-200 cursor-pointer ">
+                                        <div class="flex flex-col justify-center">
+                                            <div class="font-bold"><span>Actors</span></div>
+                                            <div><span>Celebrities</span></div>
+                                        </div>
+                                        <div class="flex flex-row items-center">
+                                            <div class="pr-1">
+                                                <button class="rounded-2xl border border-blue-500 pt-1 pb-1 pr-4 pl-4 hover:bg-blue-100">Follow</button>
+                                            </div>
+                                            <div class="flex items-center justify-center w-8 h-8 hover:bg-blue-100 rounded-full"><i class="fas fa-times"></i></div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row justify-between items-center pr-3.5 pl-3.5 pt-2 pb-2 border-b border-gray-200 text-base hover:bg-gray-200 cursor-pointer ">
+                                        <div class="flex flex-col justify-center">
+                                            <div class="font-bold"><span>Actors</span></div>
+                                            <div><span>Celebrities</span></div>
+                                        </div>
+                                        <div class="flex flex-row items-center">
+                                            <div class="pr-1">
+                                                <button class="rounded-2xl border border-blue-500 pt-1 pb-1 pr-4 pl-4 hover:bg-blue-100">Follow</button>
+                                            </div>
+                                            <div class="flex items-center justify-center w-8 h-8 hover:bg-blue-100 rounded-full"><i class="fas fa-times"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer-topics">
+                                    <div class="pt-2 pb-2 pl-3.5 pr-3.5 text-base text-blue-500  hover:bg-gray-200 rounded-b-2xl ">
+                                        <div class="w-full">
+                                            <a class="block" href="#">Show more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
