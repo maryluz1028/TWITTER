@@ -44,4 +44,9 @@ body{
 .search{
     height: 53px;
 }
-
+.everyone-can-reply{
+    display: none;
+}
+.everyone-can-reply.active{
+    display: block;
+}
